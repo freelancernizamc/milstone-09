@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone-09: Module-55</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="bg-slate-900 md:w-full">
+        <nav class="flex justify-between items-center bg-black text-white">
+            <div class="flex bg-emerald-100 rounded-3xl ml-5">
+                <img class="w-10 rounded-full" src="images/nizam.png">
+                <div>
+                    <h1 class="md:text-3xl font-bold text-yellow-900">MILSTONE<span
+                            class="text-pink-900 md:tex-7xl">-09</span></h1>
+                    <h1 class="md:text-3xl font-bold text-pink-900">MODULE<span
+                            class="text-indigo-900 md:tex-7xl">-55</span></h1>
+                </div>
+            </div>
+            <ul class="md:flex md:mr-20 font-bold">
+                <li class="pr-5 hover:text-pink-900"><a href="mod54.html">Home</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="/mod53/mod53.html">Module-53</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod41.html">Module-54</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod42.html">Module-54.5</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="./mod43/mod43.html">Module-56</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod44.html">Module-56.5</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod45.html">Module-57</a></li>
+            </ul>
+        </nav>
+        <div class="flex justify-around items-center">
+            <div class="text-warning bg-black text-7xl">
+                <div>
+                    <title>Digital Watch</title>
+                </div>
+                <div>
+                    <h1 id="clock"></h1>
+                </div>
+            </div>
+            <div>
+                <img class="rounded-full" src="/images/nizam.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="mx-20">
+        <h1 class="text-7xl text-center text-indigo-900 bg-purple-500">Module 55 Practice</h1><br>
+        <section>
+            <h2 class="text-3xl text-indigo-900 font-bold">Video 55-1 Recap React Router setup for Ema John</h2>
+            <h2 class="text-3xl text-rose-900 font-bold">Video 55-2 Use Loader to load data and create shared loader
+            </h2>
+            <h2 class="text-3xl text-green-900 font-bold">Video 55-3 (Recap) Extract Cart products from Products data
+            </h2>
+            <h2 class="text-3xl text-pink-900 font-bold">Video 55-4 Display Review Items products on the Shopping cart
+            </h2>
+            <h2 class="text-3xl text-indigo-900 font-bold">Video 55-5 More style of Review item and font awesome delete
+                style</h2>
+            <h2 class="text-3xl text-green-900 font-bold">Video 55-6 Remove Item handler and Make Data consistent across
+                UI
+            </h2>
+            <h2 class="text-3xl text-rose-900 font-bold">Video 55-7 Implement clear cart from orders and shop component
+            </h2>
+            <h2 class="text-3xl text-indigo-900 font-bold">Video 55-8 Module Summary, explore children props</h2>
+
+        </section>
+    </main>
+    <script>
+        // digital watch
+        function digitalClock() {
+            const date = new Date();
+
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes;
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            const time = hours + ":" + minutes + ":" + seconds;
+
+            document.getElementById("clock").innerText = time;
+
+            setTimeout(digitalClock, 1000);
+        }
+
+        digitalClock();
+    </script>
+</body>
+
+</html>
