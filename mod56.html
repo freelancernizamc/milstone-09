@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milstone-09: Module-55</title>
+    <title>Milstone-09: Module-56</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
@@ -20,16 +20,17 @@
                     <h1 class="md:text-3xl font-bold text-yellow-900">MILSTONE<span
                             class="text-pink-900 md:tex-7xl">-09</span></h1>
                     <h1 class="md:text-3xl font-bold text-pink-900">MODULE<span
-                            class="text-indigo-900 md:tex-7xl">-55</span></h1>
+                            class="text-indigo-900 md:tex-7xl">-56</span></h1>
                 </div>
             </div>
             <ul class="md:flex md:mr-20 font-bold">
                 <li class="pr-5 hover:text-pink-900"><a href="mod54.html">Home</a></li>
                 <li class="pr-5 hover:text-pink-900"><a href="/mod53/mod53.html">Module-53</a></li>
-                <li class="pr-5 hover:text-pink-900"><a href="mod41.html">Module-54</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod54/mod54.html">Module-54</a></li>
                 <li class="pr-5 hover:text-pink-900"><a href="mod42.html">Module-54.5</a></li>
-                <li class="pr-5 hover:text-pink-900"><a href="./mod43/mod43.html">Module-56</a></li>
-                <li class="pr-5 hover:text-pink-900"><a href="mod44.html">Module-56.5</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod55.html">Module-55</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="https://t-shirts-store-react.netlify.app/">Projects</a>
+                </li>
                 <li class="pr-5 hover:text-pink-900"><a href="mod45.html">Module-57</a></li>
             </ul>
         </nav>
@@ -48,24 +49,82 @@
         </div>
     </header>
     <main class="mx-20">
-        <h1 class="text-7xl text-center text-indigo-900 bg-purple-500">Module 55 Practice</h1><br>
+        <h1 class="text-7xl text-center text-yellow-500 bg-purple-900">Module 56 Practice</h1><br>
         <section>
-            <h2 class="text-3xl text-indigo-900 font-bold">Video 55-1 Recap React Router setup for Ema John</h2>
-            <h2 class="text-3xl text-rose-900 font-bold">Video 55-2 Use Loader to load data and create shared loader
+            <h2 class="text-3xl text-indigo-900 font-bold">Video 56-1 Another Recap of React Router Setup
             </h2>
-            <h2 class="text-3xl text-green-900 font-bold">Video 55-3 (Recap) Extract Cart products from Products data
-            </h2>
-            <h2 class="text-3xl text-pink-900 font-bold">Video 55-4 Display Review Items products on the Shopping cart
-            </h2>
-            <h2 class="text-3xl text-indigo-900 font-bold">Video 55-5 More style of Review item and font awesome delete
-                style</h2>
-            <h2 class="text-3xl text-green-900 font-bold">Video 55-6 Remove Item handler and Make Data consistent across
-                UI
-            </h2>
-            <h2 class="text-3xl text-rose-900 font-bold">Video 55-7 Implement clear cart from orders and shop component
-            </h2>
-            <h2 class="text-3xl text-indigo-900 font-bold">Video 55-8 Module Summary, explore children props</h2>
+            <h2 class="text-3xl text-rose-900 font-bold">Video 56-2 Display TShirts and style t-shirt components</h2>
+            <h2 class="text-3xl text-green-900 font-bold">Video 56-3 Recap Remove from cart and not allow duplicate</h2>
+            <h2 class="text-3xl text-pink-900 font-bold">Video 56-4 Explore Conditional Rendering and conditional css
+                class</h2>
+            <h2 class="text-3xl text-indigo-900 font-bold">Video 56-5 Prop Drilling to pass data to a many level
+                components </h2>
+            <h2 class="text-3xl text-green-900 font-bold">Video 56-6 Simple Introduction to Context API to avoid Prop
+                drilling</h2>
+            <h2 class="text-3xl text-rose-900 font-bold">Video 56-7 Deploy react router reload issue and introduction to
+                react dev tool</h2>
+            <h2 class="text-3xl text-indigo-900 font-bold">Video 56-8 Module Summary and interview questions</h2>
 
+        </section>
+        <section>
+            <h1 class="text-7xl text-center text-yellow-500 bg-purple-900">QUIZ</h1><br>
+            <h2 class="text-3xl text-rose-900 font-bold">Q1: Fill in the blank.
+
+
+                element:
+                <Hero />,
+                path: "heroes/:heroId",
+                loader: async ({ params }) => {
+                return fetch(
+                `/fake/api/heroes/${___?____}`,
+                );
+                }<br>
+                Ans: params.heroId
+            </h2>
+            <h2 class="text-3xl text-green-900 font-bold">Q2: What will be the output?
+
+                const data = [ { name: "hero", id: 1221 }, { name: "Karim", id: 1222 }, { name: "Rahim", id: 1223 } ];
+                const result = data.find(person => person.id === "1221");
+                console.log(result);<br>
+                Ans: undefined.
+            </h2>
+            <h2 class="text-3xl text-pink-900 font-bold">Q3: Which one is not true?<br>
+                Ans: Conditional rendering means rendering all components at the same time.
+            </h2>
+            <h2 class="text-3xl text-blue-900 font-bold">Q4: user ____?____
+                < User />
+
+                If I want to render
+                &lt; User /> when the user is true what should I write?<br>
+                Ans: &&.
+            </h2>
+            <h2 class="text-3xl text-rose-900 font-bold">Q5: What do you think which one will be rendered to the UI?
+
+                const admin = false;
+                { admin ? &lt;h1&gt;Admin&lt;h1&gt;:
+                &lt;User /> }<br>
+                Ans: &lt;User/>
+            </h2>
+            <h2 class="text-3xl text-green-900 font-bold">Q6: How do you declare the context API?<br>
+                Ans: const MyContext = createContext(defaultValue);
+            </h2>
+            <h2 class="text-3xl text-purple-900 font-bold">Q7: Fill in the blank with the appropriate word.
+
+                <CountContext ___?___ value={[count, setCount]}><br>
+                    Ans: .Provider
+            </h2>
+            <h2 class="text-3xl text-blue-900 font-bold">Q8: In which way do we pass props to two sibling
+                components?<br>
+                Ans: Using state up to the Parent Component and Using Context API
+            </h2>
+            <h2 class="text-3xl text-blue-900 font-bold">Q9: Which hook do you want to use for access context?<br>
+                Ans: useContext()
+            </h2>
+            <h2 class="text-3xl text-green-900 font-bold">Q10: Which of the following content should be inside
+                _redirects file to solve page not found issue for react apps in netlify?<br>
+                Ans: /* /index.html 200
+            </h2>
+            <h1 class="text-7xl text-center text-yellow-500 bg-purple-900">THE END</h1><br>
         </section>
     </main>
     <footer class="footer grid-rows-1 p-10 bg-neutral text-neutral-content">
@@ -134,7 +193,7 @@
             <a class="link link-hover">My Bank</a>
             <a class="link link-hover">Mobile Hunter</a>
             <a class="link link-hover" href="https://book-cafe-react.netlify.app/">Book Cafe</a>
-            <a class="link link-hover" href="https://t-shirts-store-react.netlify.app/">T-Shirt Store</a>
+            <a class="link link-hover" href="https://ema-john-shop-byreact.netlify.app/">Emajohn Shop</a>
         </div>
     </footer>
     <h6 class="text-center bg-neutral text-neutral-content">Copyright &copy;2023 Allright Reserved</h6>
