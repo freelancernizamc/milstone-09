@@ -1,24 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import img from './assets/nizam.png'
+import img1 from './assets/nizam.png';
+import img2 from './assets/tv.png';
+import img3 from './assets/watch.png';
+import Navigation from './Navbar/Navigation';
+import Footer from './pages/Footer/Footer';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+
     <div className="App">
+      <Navigation />
 
       <Button>React Button</Button>
       <CardGroup>
         <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Img variant="top" src={img3} />
           <Card.Body>
             <Card.Title>Card title</Card.Title>
             <Card.Text>
@@ -31,7 +37,7 @@ function App() {
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src={img} />
+          <Card.Img variant="top" src={img1} />
           <Card.Body>
             <Card.Title>Card title</Card.Title>
             <Card.Text>
@@ -44,7 +50,7 @@ function App() {
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src="./assets/nizam.png" />
+          <Card.Img variant="top" src={img2} />
           <Card.Body>
             <Card.Title>Card title</Card.Title>
             <Card.Text>
@@ -59,6 +65,7 @@ function App() {
         </Card>
       </CardGroup>
       <Button variant="success">React Button</Button>
+      <Footer />
     </div>
   )
 }
